@@ -13,3 +13,5 @@ Designation details :
 ![Table 2](https://user-images.githubusercontent.com/55397457/108823208-20e8fd00-75e6-11eb-9f9c-8f0b202c7902.jpg)
 
 Use Switch-Case to print Designation in the output and to find the value of DA for a particular employee.
+
+![output](https://user-images.githubusercontent.com/55397457/108825522-272ca880-75e9-11eb-931f-4f38b3f80510.jpg)

@@ -10,6 +10,7 @@ Salary is calculated as Basic+HRA+DA-IT. (DA details are given in the Designatio
 
 Designation details :
 
-https://user-images.githubusercontent.com/55397457/108822104-9ce24580-75e4-11eb-86b8-eaa480c87068.jpg
+![13](https://user-images.githubusercontent.com/55397457/108822104-9ce24580-75e4-11eb-86b8-eaa480c87068.jpg)
+
 
 Use Switch-Case to print Designation in the output and to find the value of DA for a particular employee.

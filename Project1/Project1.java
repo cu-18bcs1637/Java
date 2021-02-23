@@ -1,83 +1,87 @@
-//  Made by Abhishek Sinha [18BCS1637] 
+**Solution 1:**
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class Project1 {
+public class Project1 {
 
-// 	public static void main(String[] args) {
-// 		String[][] emptable = { { "1001", "ashish", "01/04/2009", "e", "R&D", "20000", "8000", "3000" },
-// 								{ "1002", "sushma", "23/08/2012", "c", "PM", "30000", "12000", "9000" },
-// 								{ "1003", "Rahul", "12/11/2008", "k", "Acct", "10000", "8000", "1000" },
-// 								{ "1004", "Chahat", "29/01/2013", "r", "FrontDesk", "12000", "6000", "2000" },
-// 								{ "1005", "Ranjan", "16/07/2005", "m", "Engg", "50000", "20000", "20000" },
-// 								{ "1006", "Suman", "1/1/2000", "e", "Manufacturing", "23000", "9000", "4400" },
-// 								{ "1007", "Tanmay", "12/06/2006", "c", "PM", "29000", "12000", "10000" }
-//                               };
+ 	public static void main(String[] args) {
+		String[][] emptable = { { "1001", "ashish", "01/04/2009", "e", "R&D", "20000", "8000", "3000" },
+ 								{ "1002", "sushma", "23/08/2012", "c", "PM", "30000", "12000", "9000" },
+ 								{ "1003", "Rahul", "12/11/2008", "k", "Acct", "10000", "8000", "1000" },
+ 								{ "1004", "Chahat", "29/01/2013", "r", "FrontDesk", "12000", "6000", "2000" },
+ 								{ "1005", "Ranjan", "16/07/2005", "m", "Engg", "50000", "20000", "20000" },
+ 								{ "1006", "Suman", "1/1/2000", "e", "Manufacturing", "23000", "9000", "4400" },
+ 								{ "1007", "Tanmay", "12/06/2006", "c", "PM", "29000", "12000", "10000" }
+                               };
 							  
-// 		String[][] empdes = {   { "e", "Engineer", "20000" }, 
-// 								{ "c", "Consultant", "32000" },
-// 								{ "k", "Clerk", "12000" },
-// 								{ "r", "Receptionist", "15000" },
-// 							    { "m", "Manager", "40000" }
+ 		String[][] empdes = {   { "e", "Engineer", "20000" }, 
+ 								{ "c", "Consultant", "32000" },
+								{ "k", "Clerk", "12000" },
+ 								{ "r", "Receptionist", "15000" },
+ 							    { "m", "Manager", "40000" }
 
-// 		                    };
+ 		                    };
 
-// 		Scanner sc = new Scanner(System.in);
+ 		Scanner sc = new Scanner(System.in);
 
-// 		int empno = Integer.parseInt(args[0]); // As the program dmeands input using Command prompt so I used Command Line Arguments
-// 												// Line Arguments
-// 		int no = 0;
-// 		int flag = 0;
-// 		for (int i = 0; i < emptable.length; i++) {
-// 			if (empno == Integer.parseInt(emptable[i][0])) {
-// 				no = i;
-// 				flag = 1;
-// 				break;
-// 			}
-// 		}
-// 		char c = emptable[no][3].charAt(0);
-// 		String des = "";
-// 		int da = 0;
-// 		String empname = emptable[no][1];
-// 		String dep = emptable[no][4];
-// 		switch (c) {
-// 			case 'e':
-// 				des = empdes[0][1];
-// 				da = Integer.parseInt(empdes[0][2]);
-// 				break;
-// 			case 'c':
-// 				des = empdes[1][1];
-// 				da = Integer.parseInt(empdes[1][2]);
-// 				break;
-// 			case 'k':
-// 				des = empdes[2][1];
-// 				da = Integer.parseInt(empdes[2][2]);
-// 				break;
-// 			case 'r':
-// 				des = empdes[3][1];
-// 				da = Integer.parseInt(empdes[3][2]);
-// 				break;
-// 			case 'm':
-// 				des = empdes[4][1];
-// 				da = Integer.parseInt(empdes[4][2]);
-// 				break;
-// 		}
-// 		int amt = Integer.parseInt(emptable[no][5]) + Integer.parseInt(emptable[no][6]) + da
-// 				- Integer.parseInt(emptable[no][7]);
-// 		if (flag == 1) {
-// 			System.out.println(
-// 					"\nEmp No. " + "|" + " Emp Name" + " |" + " Department" + " |" + " Desgination" + " |" + " Salary");
-// 			for (int i = 0; i < 55; i++)
-// 				System.out.print("=");
-// 			System.out.println(
-// 					"\n" + empno + "       " + empname + "       " + dep + "         " + des + "       " + amt);
-// 		} else {
-// 			System.out.println("\nThere is no employee with empid : " + empno);
-// 		}
+ 		int empno = Integer.parseInt(args[0]); // As the program dmeands input using Command prompt so I used Command Line Arguments
+ 												// Line Arguments
+ 		int no = 0;
+ 		int flag = 0;
+ 		for (int i = 0; i < emptable.length; i++) {
+ 			if (empno == Integer.parseInt(emptable[i][0])) {
+ 				no = i;
+ 				flag = 1;
+				break;
+			}
+ 		}
+ 		char c = emptable[no][3].charAt(0);
+		String des = "";
+		int da = 0;
+		String empname = emptable[no][1];
+ 		String dep = emptable[no][4];
+ 		switch (c) {
+ 			case 'e':
+ 				des = empdes[0][1];
+ 				da = Integer.parseInt(empdes[0][2]);
+ 				break;
+ 			case 'c':
+ 				des = empdes[1][1];
+				da = Integer.parseInt(empdes[1][2]);
+				break;
+			case 'k':
+				des = empdes[2][1];
+				da = Integer.parseInt(empdes[2][2]);
+				break;
+			case 'r':
+				des = empdes[3][1];
+				da = Integer.parseInt(empdes[3][2]);
+				break;
+			case 'm':
+				des = empdes[4][1];
+				da = Integer.parseInt(empdes[4][2]);
+ 				break;
+		}
+ 		int amt = Integer.parseInt(emptable[no][5]) + Integer.parseInt(emptable[no][6]) + da
+ 				- Integer.parseInt(emptable[no][7]);
+ 		if (flag == 1) {
+ 			System.out.println(
+ 					"\nEmp No. " + "|" + " Emp Name" + " |" + " Department" + " |" + " Desgination" + " |" + " Salary");
+ 			for (int i = 0; i < 55; i++)
+ 				System.out.print("=");
+ 			System.out.println(
+ 					"\n" + empno + "       " + empname + "       " + dep + "         " + des + "       " + amt);
+ 		} else {
+ 			System.out.println("\nThere is no employee with empid : " + empno);
+		}
 
-// 	}
+ 	}
 
-// }
+ }
+
+
+
+**Solution 2:**
 
 import java.util.Arrays;
 

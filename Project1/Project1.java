@@ -85,7 +85,7 @@ public class Project1 {
 
 import java.util.Arrays;
 
-public class test1 {
+public class Project1 {
 	public static String[] empcolumn = { "EmpNo", "EmpName", "JoinDate", "DesignationCode", "Department", "Basic", "HRA", "IT" };
 	public static String[][] empdetails = new String[][] {
 															{ "1001", "Ashish", "01/04/2009", "e", "R & D", "20000", "8000", "3000" },
